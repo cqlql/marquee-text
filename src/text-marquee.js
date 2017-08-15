@@ -3,16 +3,17 @@
  1 窗口元素
  2 包裹文字元素，能通过此文字元素能获取文字的总长度
  */
-export default function textMarquee(params) {
-  var eBox = params.eBox,
-    eText = params.eText,
-    type = params.type ? 'h' : 'w',// 默认是宽度
+export default function textMarquee({eBox,eText,type='w',perSecMove=30,interval=80}) {
+
+    // eBox = params.eBox,
+    // eText = params.eText,
+    // type = params.type ? 'h' : 'w',// 默认是宽度
 
     // 每秒滚动的像素
-    perSecMove = 120,
+    // let perSecMove = 50;
 
     // 2段文字的间距（与后面的重复文字间距）
-    interval = 100;
+    // let interval = 100;
 
   if (type === 'w') {
 

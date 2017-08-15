@@ -2,7 +2,7 @@
   "name": "text-marquee",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/text-marquee.cjs.js",
   "scripts": {
     "build": "gulp"
   },
